@@ -72,9 +72,7 @@ The selected trimming codes reported in the project presentation are:
 | SS | 1000 |
 | FS | 1010 |
 | SF | 1010 |
-| FF | 0011 (alternative code 1010 also reported) |
-
-The final FF code requires confirmation against the selected measurement condition.
+| FF | 0111 |
 
 ## 6. Simulation and Design Results
 
@@ -89,7 +87,7 @@ The following temperature drift results were reported during resistor optimizati
 | Compensation resistance = 66 kΩ | 1.6 mV |
 | Compensation resistance = 64 kΩ | 1.2 mV |
 | 64 kΩ with CTAT current variation | 759 µV |
-| Unit-dimension resistor implementation | 837 µV |
+| Unit-dimension for all resistor implementation | 837 µV |
 
 The reported results demonstrate a reduction in temperature-dependent output voltage variation through curvature compensation and resistor optimization.
 
@@ -120,15 +118,14 @@ The 4-bit trimming architecture provides 16 programmable states for output volta
 The complete 16-state measurement table and final corner-wise voltage values will be added after verification.
 
 ## 7. Specification Verification
+under constant supply voltage, temp range
 
 | Parameter | Target | Final Measured Result | Status |
 |---|---|---|---|
-| Reference Voltage | 1.2 V | To be documented | Pending |
-| Pre-trim Accuracy | ±5% | To be documented | Pending |
-| Post-trim Accuracy | ±0.5% | To be documented | Pending |
-| Temperature Coefficient | <50 ppm/°C | To be calculated from temperature sweep | Pending |
-| Supply Voltage Range | 1.62–1.98 V | To be documented | Pending |
-| Temperature Range | −40°C to 125°C | Compensation evaluated over this range | To be verified |
+| Reference Voltage | 1.2 V | 1.2000–1.2020 V (Post-trim) | PASS |
+| Pre-trim Accuracy | ±5% | ±1.058% | PASS |
+| Post-trim Accuracy | ±0.5% | ±0.083% | PASS |
+| Temperature Coefficient | <50 ppm/°C | 10.10 ppm/°C | PASS |
 
 ## 8. Tools and Technologies
 
