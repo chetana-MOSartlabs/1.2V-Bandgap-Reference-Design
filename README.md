@@ -158,7 +158,6 @@ The project investigates a temperature-compensated 1.2V bandgap reference with a
 
 Second-order curvature compensation and resistor optimization were implemented to reduce temperature-dependent output voltage variation. A 4-bit trimming network was developed to improve output voltage accuracy across process variations.
 
-Further detailed simulation results and specification verification will be documented as part of the project validation.
 
 ---
 
